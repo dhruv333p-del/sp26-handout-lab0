@@ -5,7 +5,7 @@ Make sure to implement tests in the tests directory.
 
 
 def is_palindrome(s: str) -> bool:
-    """
+"""
     Check if the given string is a palindrome.
 
     A palindrome is a string that reads the same forwards and backwards,
@@ -16,4 +16,5 @@ def is_palindrome(s: str) -> bool:
     Returns:
         bool: True if the string is a palindrome, False otherwise.
     """
-    return True
+    a = ''.join(c.lower() for c in s if c.isalnum())
+    return a == a[::-1]
